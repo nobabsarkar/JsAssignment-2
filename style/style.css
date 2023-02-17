@@ -11,3 +11,18 @@
 .card {
   background-color: black;
 }
+.calculate-per-player {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+input.calculate-per-player-input {
+  width: 135px;
+}
+.full-budget {
+  width: 230px;
+  margin: auto;
+}
+.player-list li {
+  list-style-type: none;
+}
