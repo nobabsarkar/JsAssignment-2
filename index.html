@@ -165,12 +165,20 @@
             <div class="full-budget">
               <div class="calculate-per-player mt-4">
                 <p class="m-0 text-white">Per Player</p>
-                <input class="calculate-per-player-input" type="text" />
+                <input
+                  id="budget-per-player"
+                  class="calculate-per-player-input"
+                  type="text"
+                />
               </div>
-              <button class="btn btn-primary w-100 mt-3">Calculate</button>
-              <p class="text-white mt-4">
-                Player Expenses <span class="ms-4">$5000</span>
-              </p>
+              <button id="calculate-btn" class="btn btn-primary w-100 mt-3">
+                Calculate
+              </button>
+              <div class="d-flex text-white mt-4 justify-content-around">
+                <p class="m-0">Player Expenses</p>
+                <p class="m-0">$<span id="player-expenses"> 00</span></p>
+              </div>
+
               <div class="calculate-per-player mt-4">
                 <p class="m-0 text-white">Manager</p>
                 <input class="calculate-per-player-input" type="text" />

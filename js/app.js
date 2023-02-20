@@ -17,3 +17,15 @@ function myFunction(element) {
     }
   }
 }
+
+document.getElementById("calculate-btn").addEventListener("click", function () {
+  const bedgetPerPlayer = document.getElementById("budget-per-player");
+  const budgetPerPlayerString = bedgetPerPlayer.value;
+  const newBedgetPerPlayer = parseInt(budgetPerPlayerString);
+  bedgetPerPlayer.value = "";
+
+  const devitionTotalPlayer = newBedgetPerPlayer * 5;
+
+  const playerExpenses = document.getElementById("player-expenses");
+  playerExpenses.innerText = devitionTotalPlayer;
+});
