@@ -29,3 +29,26 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
   const playerExpenses = document.getElementById("player-expenses");
   playerExpenses.innerText = devitionTotalPlayer;
 });
+
+document
+  .getElementById("calculate-total")
+  .addEventListener("click", function () {
+    const manager = document.getElementById("manager");
+    const managerString = manager.value;
+    const newManager = parseInt(managerString);
+    manager.value = "";
+
+    const coach = document.getElementById("coach");
+    const coachString = coach.value;
+    const newCoach = parseInt(coachString);
+    coach.value = "";
+
+    const playerExpenses = document.getElementById("player-expenses");
+    const playerExpensesString = playerExpenses.innerText;
+    const perPlayerExpense = parseInt(playerExpensesString);
+
+    const totalPlayer = newManager + newCoach + perPlayerExpense;
+
+    const totalPriceNumber = document.getElementById("total-price");
+    totalPriceNumber.innerText = totalPlayer;
+  });

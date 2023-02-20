@@ -176,25 +176,33 @@
               </button>
               <div class="d-flex text-white mt-4 justify-content-around">
                 <p class="m-0">Player Expenses</p>
-                <p class="m-0">$<span id="player-expenses"> 00</span></p>
+                <p class="m-0">$<span id="player-expenses">00</span></p>
               </div>
 
               <div class="calculate-per-player mt-4">
                 <p class="m-0 text-white">Manager</p>
-                <input class="calculate-per-player-input" type="text" />
+                <input
+                  id="manager"
+                  class="calculate-per-player-input"
+                  type="text"
+                />
               </div>
               <div class="calculate-per-player mt-4">
                 <p class="m-0 text-white">Coach</p>
-                <input class="calculate-per-player-input" type="text" />
+                <input
+                  id="coach"
+                  class="calculate-per-player-input"
+                  type="text"
+                />
               </div>
-              <button class="btn btn-primary w-100 mt-3">
+              <button id="calculate-total" class="btn btn-primary w-100 mt-3">
                 Calculate Total
               </button>
               <div
                 class="d-flex justify-content-around align-items-center mt-2"
               >
                 <p class="text-white">Total</p>
-                <p class="text-danger">$00</p>
+                <p class="text-danger">$<span id="total-price">00</span></p>
               </div>
             </div>
           </div>
